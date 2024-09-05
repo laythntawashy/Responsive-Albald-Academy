@@ -1,0 +1,1222 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&family=Reem+Kufi+Fun:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Noto+Nastaliq+Urdu:wght@400..700&family=Reem+Kufi+Fun:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Noto+Nastaliq+Urdu:wght@400..700&family=Reem+Kufi+Fun:wght@400..700&family=Zain:wght@200;300;400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Changa:wght@200..800&family=Noto+Nastaliq+Urdu:wght@400..700&family=Reem+Kufi+Fun:wght@400..700&family=Zain:wght@200;300;400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Changa:wght@200..800&family=Noto+Nastaliq+Urdu:wght@400..700&family=Reem+Kufi+Fun:wght@400..700&family=Reem+Kufi:wght@400..700&family=Zain:wght@200;300;400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Aref+Ruqaa+Ink:wght@400;700&family=Blaka+Ink&family=Changa:wght@200..800&family=Noto+Nastaliq+Urdu:wght@400..700&family=Rakkas&family=Reem+Kufi+Fun:wght@400..700&family=Reem+Kufi:wght@400..700&family=Zain:wght@200;300;400;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: pop;
+    src: url(./Fonts/Poppins-Medium.ttf);
+}
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #3AA6B9;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3AA6B9;
+}
+
+
+
+
+/* navbar styling */
+
+nav{
+  position: fixed;
+  width: 100%;
+  padding: 15px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
+  box-shadow: 0 0 8px #3AA6B9;
+  background: #FFFFFF;
+}
+nav.sticky{
+  background: #3AA6B9;
+  padding: 15px 0;
+}
+nav .navbar{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+nav .navbar .logo a {
+  display: flex;
+  gap: 10px; 
+}
+nav .navbar .logo a img {
+  max-width: 35px;
+}
+nav .logo h2 {
+  color: #3AA6B9;
+  font-weight: 500;
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 22px;
+}
+/* nav .navbar .logo a{
+  font-weight: 500;
+  font-size: 25px;
+  color: #4070f4;
+  font-family: "Reem Kufi", sans-serif;
+}*/
+nav.sticky .navbar .logo h2{
+  color: #fff;
+  
+} 
+nav .navbar .menu{
+  display: flex;
+  position: relative;
+}
+nav .navbar .menu li{
+  list-style: none;
+  margin: 0 8px;
+  align-items: center;
+}
+
+.navbar .menu a{
+  font-size: 18px;
+  font-weight: 330;
+  font-family:  pop;
+  color: black;
+  padding: 6px 10px;
+  font-family: "Zain", serif;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+.navbar .menu a:hover{
+  color: #3AA6B9;
+  
+}
+nav.sticky .menu a{
+  color: #FFF;
+}
+nav.sticky .menu a:hover{
+  color: #0E2431;
+}
+.navbar .media-icons a,button{
+  color: #3AA6B9;
+  font-size: 30px;
+  margin: 0 6px;
+  display: block;
+}
+nav.sticky .media-icons a{
+  color: black;
+  
+}
+.navbar .media-icons {
+  margin: 15px 0;
+}
+.navbar .media-icons a,button{
+  outline: none;
+  padding: 6px 25px;
+  border-radius: 19px;
+  font-size: 15px;
+  font-weight: 100;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border: 2px solid #3AA6B9;
+  transition: all 0.4s ease;
+  position: absolute;
+  right: 60px;
+  top: 15px;
+}
+
+/* Side Navigation Menu Button CSS */
+nav .menu-btn,
+.navbar .menu .cancel-btn{
+  position: absolute;
+  color: #fff;
+  right: 30px;
+  top: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+  
+}
+nav .navbar .menu .imgfooter{
+  display: none;
+}
+
+nav .menu-btn{
+  color: #3AA6B9;
+  font-weight: bold;
+}
+nav.sticky .menu-btn{
+  color: #FFF;
+  
+}
+.navbar .menu .menu-btn{
+  color: #fff;
+}
+
+/* home section styling */
+
+
+.home {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.home::before {
+  content: '';
+  background-image: url(image/logm.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 12%;
+}
+
+.home .home-content {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.home .text-one,
+.home .text-two,
+.home .text-three,
+.home .text-four,
+.home .button,
+.home .media-icons {
+  opacity: 0; /* إخفاء العناصر في البداية */
+  transform: translateY(30px); /* تحريك العناصر لأسفل */
+  animation: fadeInUp 1s forwards; /* الحركة من الأسفل للأعلى */
+}
+
+.home .text-one {
+  font-family: "Zain", sans-serif;
+  font-size: 27px;
+  color: #ff4732;
+  margin-bottom: 15px;
+  text-align: center;
+  animation-delay: 0.5s; /* الظهور الأول */
+}
+
+.home .text-two {
+  color: black;
+  font-family: "Reem Kufi Fun", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  margin-left: -3px;
+  margin-bottom: 15px;
+  text-align: center;
+  animation-delay: 1.5s; /* الظهور الثاني */
+}
+
+.home .text-three {
+  font-size: 20px;
+  margin: 5px 0;
+  font-weight: 350;
+  color: #3AA6B9;
+  font-family: pop;
+  text-align: center;
+  font-family: "Zain", serif;
+  animation-delay: 2.5s; /* الظهور الثالث */
+}
+
+.home .text-four {
+  font-size: 20px;
+  margin: 5px 0;
+  font-family: pop;
+  color: #939393;
+  text-align: center;
+  font-family: "Zain", serif;
+  margin-bottom: 20px;
+  animation-delay: 3.5s; /* الظهور الرابع */
+}
+
+.home .button {
+  margin: 14px 0;
+  text-align: center;
+  animation-delay: 4.5s; /* الظهور الخامس */
+}
+
+.home .button a {
+  outline: none;
+  padding: 6px 25px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  font-size: 25px;
+  font-family: "Zain", serif;
+  font-weight: 300;
+  background-color: #FFFFFF;
+  color: black;
+  cursor: pointer;
+  border: 2px solid #3AA6B9;
+  transition: all 0.4s ease;
+}
+.home .button .bh{
+  color: #227A09;
+  font-size: 35px;
+}
+
+.home .button a:hover {
+  background-color: #3AA6B9;
+  color: black;
+  box-shadow: 0 0 20px #3AA6B9;
+  transform: scale(1.1);
+}
+
+.home .media-icons {
+  text-align: center;
+  margin-top: 30px;
+  animation-delay: 5.5s; /* الظهور السادس */
+}
+
+.home .media-icons a {
+  font-size: 30px;
+  margin: 5px 0;
+  padding: 0 10px;
+  margin-top: 35px;
+  cursor: pointer;
+  border-radius: 50% #3AA6B9;
+}
+
+.home .media-icons a:hover {
+  transform: scale(1.2);
+  background: none;
+}
+
+#facebook {
+  color: blue;
+}
+
+#x {
+  color: #1DA1F2;
+}
+
+#insta {
+  color: #E1306C;
+}
+
+/* حركة ظهور النصوص من الأسفل للأعلى */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* About Section Styling */
+/* Those Elements Where We Have Apply Same CSS,
+ I'm Selecting Directly 'Section Tag' and 'Class'  */
+section{
+
+  padding-top: 40px;
+
+}
+section .content{
+  width: 80%;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+}
+.about .about-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+section .title span{
+  color: #113137;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+  font-family:  'Poppins', sans-serif;
+}
+section .title span::before,
+section .title span::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #3AA6B9;
+  left: 0;
+  bottom: 0;
+}
+section .title span::after{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about .about-details .left{
+  width: 45%;
+}
+.about .left img{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  
+  
+}
+.about-details .right{
+  width: 55%;
+}
+section  .topic{
+  color: #3AA6B9;
+  font-size: 32px;
+  font-weight: 750;
+  margin-bottom: 10px;
+  text-align: center;
+  justify-content: center;
+  font-family: "Zain", serif;
+ 
+}
+.about-details .right p{
+  text-align: justify;
+  color: #0E2431;
+  font-size: 24px;
+  font-family: "Zain", sans-serif;;
+}
+
+ /* My Skills CSS */
+/* My Services CSS */
+.services .boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.services .boxes .box{
+  margin: 20px 0;
+  width: calc(100% / 3 - 20px);
+  text-align: center;
+  border-radius: 45px 14px;
+  padding: 30px 10px;
+  background: linear-gradient(-10deg,#3AA6B9 20%, white 0%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.20);;
+  cursor: default;
+  transition: all 0.4s ease;
+}
+.services .boxes .box:hover{
+  background: #4070f4;
+  color: #fff;
+}
+.services .boxes .box .icon{
+  height: 50px;
+  width: 50px;
+  background: #4070f4;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+.boxes .box:hover .icon{
+  background-color: #fff;
+  color: #4070f4;
+}
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p{
+  color: #0E2431;
+  transition: all 0.4s ease;
+}
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p{
+  color: #fff;
+}
+/* Contact Me CSS */
+.dd{
+  min-height: 100vh;
+  width: 100%;
+  background: #c8e8e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dd .title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.dd .title span{
+  color: #113137;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+  font-family:  'Poppins', sans-serif;
+}
+.dd .title span::before,
+.dd .title span::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #3AA6B9;
+  left: 0;
+  bottom: 0;
+}
+.dd .title span::after{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container {
+  max-width: 1100px;
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .left-side {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before {
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details {
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i {
+  font-size: 22px;
+  color: green;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic {
+  font-size: 20px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two {
+  font-size: 13px;
+  color: #afafb6;
+}
+
+.container .content .right-side {
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: green;
+}
+.right-side .input-box {
+  height: 55px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .hh{
+  align-items: center;
+  font-size: 30px;
+  color: black;
+  font-family: "Zain" sans-serif;
+
+  
+}
+.right-side .input-box input,
+.right-side .input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #f0f1f8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box {
+  min-height: 110px;
+}
+.right-side .input-box textarea {
+  padding-top: 6px;
+}
+.right-side .button {
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="submit"] {
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: green;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="submit"]:hover {
+  background: #3AA6B9;
+}
+
+
+/* Footer CSS */
+
+.footr{
+    background: -webkit-linear-gradient(45deg, #02A6AC, #181818);
+
+    background: linear-gradient(45deg, #fff, #41ABAB);
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialIcons p{
+  font-size: 1.5em;
+  font-family:  "Reem Kufi Fun", sans-serif;
+  font-weight: bold;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    
+    margin: 10px;
+    border-radius: 30%;
+}
+.socialIcons a i{
+    font-size: 1.3em;
+    color: black;
+    opacity: 0,9;
+}
+
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #0EB6B5;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+
+.footr .imgfooter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+   
+}
+.footr .imgfooter a img {
+  max-width: 120px;
+}
+
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    align-items: center;
+    font-weight: bold;
+}
+.footerNav ul li a{
+    color: black;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+    font-family: "Zain", serif;
+    font-weight: bold;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 30px 40px 20px rgba(0, 0, 0, 0.2);
+}
+.footerBottom p{
+    color: black#42445A;
+}
+.designer{
+    opacity: 0.7;
+    font-family: "Pacifico", cursive;;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+
+
+/* Scroll TO Top Button CSS */
+.scroll-button a{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: green;
+  padding: 7px 12px;;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+
+/* Responsive Media Query */
+@media (max-width: 1190px) {
+  section .content{
+    width: 80%;
+  }
+}
+@media (max-width: 1000px) {
+  .about .about-details{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about .about-details .left{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .about-details .right{
+    width: 90%;
+    margin: 40px 0;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: calc(100% / 2 - 20px);
+  }
+}
+@media (max-width: 900px) {
+  .about .left img{
+    height: 350px;
+    width: 350px;
+  }
+  .container {
+    width: 90%;
+    padding: 30px 40px 40px 35px;
+  }
+  .container .content .right-side {
+    width: 75%;
+    margin-left: 55px;
+  }
+}
+
+@media (max-width: 1150px) {
+  nav .navbar{
+    width: 90%;
+  }
+  nav .navbar .menu{
+    background: -webkit-linear-gradient(45deg, #02A6AC, #181818);
+    background: linear-gradient(45deg, #fff, #41ABAB);
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+  }
+
+  .navbar.active .menu{
+    top: 0;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+
+  nav .navbar .menu a{
+    font-size: 23px;
+    display: block;
+    color: #000000;
+    margin: 10px 0;
+    border-bottom: 1px solid #FFFFFF;
+  }
+  nav .navbar .menu .imgfooter{
+    display: block;
+    padding-top: 80px;
+    margin: 10px 0;
+  }
+  nav .navbar .menu a:hover{
+    color: #FFFFFF;
+  }
+  nav.sticky .menu a:hover{
+    color: #FFFFFF;
+  }
+  nav.sticky .menu-btn, 
+  nav.sticky .navbar .menu .cancel-btn{
+    border: 1.2px solid #FFFFFF;
+  }
+  nav .navbar .media-icons{
+    display: block;
+  }
+  /* .navbar .menu li{
+    transition: left 0.6s ease;
+  } */
+
+  nav .navbar .media-icons .login{
+    display: block;
+    font-size: 15px;
+    margin-right: 10px;
+  }
+ 
+  nav .menu-btn,
+  .navbar .menu .cancel-btn{
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1.2px solid #3AA6B9;
+    border-radius: 10%; 
+  }
+  .home .text-two{
+    font-size: 65px;
+  }
+  .home .text-three{
+    font-size: 35px;
+  }
+  .skills .skills-details{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .skills-details .text{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .skills-details .boxes{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: 100%;
+  }
+  .contact .text{
+    width: 100%;
+  }
+  .container {
+    margin: 40px 0;
+    height: 100%;
+  }
+  .container .content {
+    flex-direction: column-reverse;
+  }
+  .container .content .left-side {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .container .content .left-side::before {
+    display: none;
+  }
+  .container .content .right-side {
+    width: 100%;
+    margin-left: 0;
+  }
+  section .topic{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 500px){
+  .home .text-two{
+    font-size: 50px;
+    transition: left .6s ease;
+  }
+  .home .text-three{
+    font-size: 32px;
+  }
+  .skills-details .boxes .per{
+    font-size: 50px;
+    color: #4070f4;
+  }
+}
+
+
+
+
+:root {
+  --main-color: #2196f3;
+  --main-color-alt: #1787e0;
+  --main-transition: 0.3s;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --section-background: #ececec;
+}
+
+
+
+.container1 {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container1 {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container1 {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container1 {
+    width: 1170px;
+  }
+}
+
+
+/* Start Stats */
+.stats {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  position: relative;
+  min-height: 300px;
+}
+.stats::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255 255 255 / 95%);
+
+}
+.stats h2 {
+  font-family: "zain", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  width: fit-content;
+  margin: 0 auto 50px;
+  position: relative;
+}
+.stats .container1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+.stats .box {
+  background-color: white;
+  padding: 30px 15px;
+  text-align: center;
+  position: relative;
+  opacity: 0.8;
+  transition: var(--main-transition);
+}
+.stats .box::before,
+.stats .box::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: #3AA6B9;
+  transition: 1s;
+  height: 0;
+}
+.stats .box::before {
+  top: 0;
+  right: 0;
+}
+.stats .box::after {
+  left: 0;
+  bottom: 0;
+}
+.stats .box:hover {
+  opacity: 1;
+}
+.stats .box:hover::before,
+.stats .box:hover::after {
+  height: 100%;
+}
+.stats .box .number {
+  display: block;
+  font-size: 48px;
+  font-family: "zain", sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.stats .box .text {
+  color: black;
+  font-size: 25px;
+  font-family: "zain", sans-serif;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap');
+
+.ourteam
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   min-height: 100vh;
+   width: 100%;
+   background: whitesmoke;
+}
+.card
+{
+   position: relative;
+   width: 280px;
+   height: 350px;
+   background: #fff;
+   overflow: hidden;
+   border-radius: 20px;
+   margin: 20px;
+}
+.card .circle
+{
+   position: absolute;
+   top: -190px;
+   left: 50%;
+   width: 400px;
+   height: 400px;
+   transform: translateX(-50%);
+   clip-path: circle();
+}
+.card .circle::before
+{
+   content: '';
+   position: absolute;
+   top: -8px;
+   left: -16px;
+   width: 100%;
+   height: 100%;
+   box-shadow: 0 0 0 20px #3AA6B9;
+   border-radius: 50%;
+   z-index: 2;
+   pointer-events: none;
+}
+.circle .imgBox
+{
+   position: absolute;
+   left: 50%;
+   bottom: 0;
+   transform: translateX(-50%);
+   width: 240px;
+   height: 210px;
+}
+.imgBox img
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+   transition: all 0.5s;
+}
+.imgBox img:hover
+{
+   transform: scale(1.2);
+}
+.card .content1
+{
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 140px;
+   padding: 20px 30px;
+}
+.content1 .fa-user-tie
+{
+   padding: 2px 4px;  
+   color: #fff;
+   background: #3AA6B9;
+   border-radius: 2px;
+}
+.content1 h3
+{
+   font-size: 1.4em;
+   color: #333;
+   margin-top: 7px;
+   margin-bottom: 2px;
+}
+.content1 .textIcon
+{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+}
+.content1 .textIcon h4
+{
+   color: #e91e63;
+   font-weight: 350;
+}
+.content1 .textIcon .fa-arrow-right
+{
+   color: green;
+}
+
+
+
+
+
+ 
+        /* تصميم الخلفية للـ Preloader */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            flex-direction: column;
+        }
+
+        /* تصميم الصورة */
+        #preloader img {
+            width: 180px; /* حجم الصورة */
+            height: auto;
+        }
+        #preloader h1{
+          font-family: "Zain", serif;
+          color: #274650;
+        }
+      
+        /* تصميم الدوائر */
+        .loader {
+            margin-top: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loader div {
+            width: 15px;
+            height: 15px;
+            margin: 0 5px;
+            background-color: #3AA6B9;
+            border-radius: 50%;
+            animation: bounce 1.2s infinite;
+        }
+
+        .loader div:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .loader div:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes bounce {
+            0%, 80%, 100% {
+                transform: scale(0);
+            }
+            40% {
+                transform: scale(1);
+            }
+        }

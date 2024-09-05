@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f7f9fc;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+.container .title {
+    padding: 20px;
+    background: #3AA6B9;
+    color: #ffffff;
+    text-align: center;
+    border-bottom: 2px solid #ffffff;
+    margin-bottom: 20px;
+}
+
+.container .title p {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+    position: relative;
+}
+
+.container .title p::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 4px;
+    background: linear-gradient(to right, #F37A65, #D64141);
+}
+
+.user_details {
+    padding: 20px;
+}
+
+.input_box {
+    margin-bottom: 20px;
+}
+
+.input_box label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 14px;
+    color: #333;
+}
+
+.input_box label::after {
+    content: " *";
+    color: red;
+}
+
+.input_box input,
+.input_box select {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 12px;
+    background-color: #ffffff;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.input_box input:focus,
+.input_box select:focus {
+    border-color: #3AA6B9;
+    outline: none;
+}
+
+.reg_btn {
+    text-align: center;
+}
+
+.reg_btn input {
+    height: 50px;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(to right, #3AA6B9, #3AA6B9);
+    border-radius: 8px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+.reg_btn input:hover {
+    background: linear-gradient(to right, #D64141, #3AA6B9);
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .input_box input,
+    .input_box select {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .reg_btn input {
+        height: 45px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: none;
+    }
+
+    .input_box {
+        margin-bottom: 15px;
+    }
+
+    .input_box input,
+    .input_box select {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .reg_btn input {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .container .title p {
+        font-size: 22px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
